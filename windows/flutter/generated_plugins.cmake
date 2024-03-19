@@ -8,11 +8,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   firebase_auth
   firebase_core
   firebase_storage
-  flutter_webrtc
   record_windows
-  screen_retriever
-  videosdk
-  window_manager
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
