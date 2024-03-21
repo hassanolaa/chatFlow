@@ -78,6 +78,7 @@ class _massages_senderState extends State<massages_sender> {
                   pageListBuilder: (modalSheetContext) {
                     return [
                       WoltModalSheetPage(
+                        backgroundColor: backbackground,
                         child: Container(
                             height: MediaQuery.sizeOf(context).height * 0.35,
                             child: send_options(

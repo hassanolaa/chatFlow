@@ -90,6 +90,7 @@ class _file_massageState extends State<file_massage> {
                         Text(
                           widget.username,
                           style: TextStyle(
+                            color: textcolor,
                               fontSize: 10.sp, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
@@ -98,6 +99,7 @@ class _file_massageState extends State<file_massage> {
                       Text(
                         widget.time,
                         style: TextStyle(
+                            color: textcolor,
                             fontSize: 8.sp, fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
@@ -121,11 +123,19 @@ class _file_massageState extends State<file_massage> {
                       width: 190.w,
                       height: 40.h,
                       child: Padding(
-                          padding: EdgeInsets.only(left: 10.w),
-                          child: Icon(
-                            Icons.file_copy,
-                            size: 30.sp,
-                            color: textcolor,
+                          padding: EdgeInsets.only(left: 40.w),
+                          child: Row(
+                            children: [
+                              Text("Pdf",style: TextStyle(color: Colors.black),),
+                              SizedBox(
+                                width: 30.w,
+                              ),
+                              Icon(
+                                Icons.file_copy,
+                                size: 30.sp,
+                                color: textcolor,
+                              ),
+                            ],
                           )),
                     ),
                   ],

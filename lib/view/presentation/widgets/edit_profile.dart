@@ -60,7 +60,7 @@ Widget edit_profile(){
         ),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: color3,
+            primary: color3
           ),
           onPressed: () {},
           child: Text('Save'),

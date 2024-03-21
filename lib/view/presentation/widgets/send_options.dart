@@ -17,6 +17,7 @@ class _send_optionsState extends State<send_options> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: backbackground,
       child: Column(
         // camra - photo/video - location - file - contact
         children: [

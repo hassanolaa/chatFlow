@@ -129,6 +129,7 @@ class _text_massageState extends State<text_massage> {
                       child: Text(
                         widget.massage,
                         style: TextStyle(
+                          color: Colors.black,
                             fontSize: 11.sp, fontWeight: FontWeight.bold),
                       ),
                     ),

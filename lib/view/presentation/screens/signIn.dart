@@ -25,7 +25,7 @@ class _signInState extends State<signIn> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/back2.gif"),
+            image: AssetImage("assets/back.gif"),
             fit: BoxFit.cover,
             // opacity: 0.5,
           ),

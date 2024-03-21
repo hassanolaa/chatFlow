@@ -9,6 +9,7 @@ import 'package:chat_app/view/presentation/screens/massages.dart';
 import 'package:chat_app/view/presentation/screens/profile.dart';
 import 'package:chat_app/view/presentation/screens/signIn.dart';
 import 'package:chat_app/view/presentation/screens/signup.dart';
+import 'package:chat_app/view/presentation/screens/splash.dart';
 import 'package:chat_app/view/presentation/screens/status.dart';
 import 'package:chat_app/view/presentation/screens/status_view.dart';
 import 'package:chat_app/view/presentation/screens/user_info.dart';
@@ -54,7 +55,8 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         useInheritedMediaQuery: true,
         locale: DevicePreview.locale(context),
-        builder: DevicePreview.appBuilder,
+      //  builder: DevicePreview.appBuilder,
+      
         // here
         routerConfig: router,
       ),
@@ -63,9 +65,15 @@ class MyApp extends StatelessWidget {
 
   final GoRouter router = GoRouter(
       initialLocation:
-       // '/status_view',
+       //'/splash',
           user_repository.getCurrentUser() != null ? '/navi' : '/signup',
       routes: [
+         GoRoute(
+          path: '/splash',
+          builder: (context, state) {
+            return const splash();
+          },
+        ),
         GoRoute(
           path: '/signup',
           builder: (context, state) {

@@ -56,7 +56,7 @@ class _naviState extends State<navi> {
             //   colors: [color1, color2],
             // ),
             image: DecorationImage(
-              image: AssetImage('assets/back2.gif'),
+              image: AssetImage('assets/back.gif'),
               fit: BoxFit.cover,
             ),
           ),
@@ -80,7 +80,7 @@ class _naviState extends State<navi> {
                     color: selected == 0 ? color1 : Colors.transparent,
                     border: Border.all(color: color1, width: 1),
                   ),
-                  child: Icon(Icons.chat_bubble_outline),
+                  child: Icon(Icons.chat_bubble_outline,color: color3,),
                 ),
               ),
               SizedBox(
@@ -101,7 +101,7 @@ class _naviState extends State<navi> {
                     color: selected == 1 ? color1 : Colors.transparent,
                     border: Border.all(color: color1, width: 1),
                   ),
-                  child: Icon(Icons.image_outlined),
+                  child: Icon(Icons.image_outlined,color: color3,),
                 ),
               ),
               SizedBox(
@@ -117,7 +117,7 @@ class _naviState extends State<navi> {
                 child: CircleAvatar(
                   radius: 35.r,
                   backgroundColor: color3,
-                  child: Icon(Icons.add),
+                  child: Icon(Icons.add,color: Colors.black,),
                 ),
               ),
               SizedBox(
@@ -138,7 +138,7 @@ class _naviState extends State<navi> {
                     color: selected == 3 ? color1 : Colors.transparent,
                     border: Border.all(color: color1, width: 1),
                   ),
-                  child: Icon(Icons.call_sharp),
+                  child: Icon(Icons.call_sharp,color: color3,),
                 ),
               ),
               SizedBox(
@@ -159,7 +159,7 @@ class _naviState extends State<navi> {
                     color: selected == 4 ? color1 : Colors.transparent,
                     border: Border.all(color: color1, width: 1),
                   ),
-                  child: Icon(Icons.person_outline_outlined),
+                  child: Icon(Icons.person_outline_outlined,color: color3,),
                 ),
               ),
             ],

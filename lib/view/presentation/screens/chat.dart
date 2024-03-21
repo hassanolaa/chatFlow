@@ -1,6 +1,7 @@
 import 'package:chat_app/model/chat_route.dart';
 import 'package:chat_app/repository/massage_repository.dart';
 import 'package:chat_app/repository/user_repository/user_repository_firebase.dart';
+import 'package:chat_app/view/presentation/meeting/Screens/joinMeeting.dart';
 import 'package:chat_app/view/presentation/widgets/file_massage.dart';
 import 'package:chat_app/view/presentation/widgets/massages_sender.dart';
 import 'package:chat_app/view/presentation/widgets/navi.dart';
@@ -12,6 +13,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../const/const.dart';
+import '../meeting/Screens/SplashScreen.dart';
 import '../widgets/image_massage.dart';
 import '../widgets/video_massage.dart';
 
@@ -117,7 +119,7 @@ class _chatState extends State<chat> {
                     Text(
                       widget.username,
                       style: TextStyle(
-                          fontSize: 15.sp, fontWeight: FontWeight.bold),
+                          fontSize: 15.sp, fontWeight: FontWeight.bold,color: color4),
                     ),
                     SizedBox(
                       height: 5.h,
@@ -150,7 +152,7 @@ class _chatState extends State<chat> {
               // video call icon
               GestureDetector(
                 onTap: () {
-                 // Navigator.push(context, MaterialPageRoute(builder: ((context) => SplashScreen())));
+                 Navigator.push(context, MaterialPageRoute(builder: ((context) =>JoinScreen())));
                 },
                 child: CircleAvatar(
                     radius: 12.r,
